@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Activist';
+    src: url('/assets/type/Activist.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    cursor: url('/assets/graphics/old_school_point.svg'), auto;
+}
+
+html a:hover,  
+.slide,
+.arrow {
+    cursor: url('/assets/graphics/old_school_hover.svg'), auto !important;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10; 
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    color: #FFFEFC;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+svg.logo {
+    width: 9rem;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-size: clamp(3.5rem,20vw,20rem);
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: #FFFEFC;
+    text-decoration: none;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    min-width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#rudy .overlay {
+    background: rgba(140, 174, 218, 0.25);
+}
+
+#mitch .overlay {
+    background: rgba(254, 148, 140, 0.25);
+}
+
+#nic .overlay {
+    background: rgba(189, 219, 90, 0.25);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    width: auto;
+    height: clamp(4rem, 10vw, 12rem);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    font-size: 3rem;
+    color: #FFFEFC;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 1rem;
+    width: clamp(2rem,3vw,4rem);
+    height: auto;
+}
+
+.arrow-right {
+    right: 1rem;
+    width: clamp(2rem,3vw,4rem);
+    height: auto;
+}
+
+/*Logo animation*/
+
+.logo:hover .signal1 {
+    animation: blink 1.5s infinite;
+    animation-delay: 0s;
+}
+
+.logo:hover .signal2 {
+    animation: blink 1.5s infinite;
+    animation-delay: .5s;
+}
+
+.logo:hover .signal3 {
+    animation: blink 1.5s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo:hover .radar-signal {
+    opacity: 0;
+}

@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Activist';
+    src: url('/assets/type/Activist.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    cursor: url('/assets/graphics/old_school_point.svg'), auto;
+}
+
+html a:hover {
+    cursor: url('/assets/graphics/old_school_hover.svg'), auto;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10; 
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    color: #FFFEFC;
+}
+
+svg.logo {
+    width: 9rem;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10rem 1rem;
+}
+
+#info .content {
+    max-width: 40rem;
+}
+
+h1 {
+    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-size: clamp(1.15rem, 3vw, 1.75rem);
+    line-height: 1;
+    text-align: center;
+    color: #FFFEFC;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-size: clamp(3rem, 10vw, 12rem);
+    line-height: 1;
+    text-align: center;
+    color: #FFFEFC;
+    margin: 0 0 3rem;
+}
+
+p {
+    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-size: clamp(.85rem,3vw,.95rem);
+    line-height: 1.5;
+    color: #FFFEFC;
+    margin: 0;
+}
+
+a {
+    color: #FFFEFC;
+    text-decoration: none;
+}
+
+hr {
+    height: 2px;
+    margin: 1.5rem 0;
+    border: none;
+    background: #FFFEFC;
+}
+
+/*Logo animation*/
+
+.logo:hover .signal1 {
+    animation: blink 1.5s infinite;
+    animation-delay: 0s;
+}
+
+.logo:hover .signal2 {
+    animation: blink 1.5s infinite;
+    animation-delay: .5s;
+}
+
+.logo:hover .signal3 {
+    animation: blink 1.5s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo:hover .radar-signal {
+    opacity: 0;
+}
