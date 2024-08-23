@@ -15,13 +15,13 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/old_school_point.svg'), auto;
+    cursor: url('/assets/graphics/old_school_point.svg') 5 -5, auto;
 }
 
 html a:hover,  
 .slide,
 .arrow {
-    cursor: url('/assets/graphics/old_school_hover.svg'), auto !important;
+    cursor: url('/assets/graphics/old_school_hover.svg') 5 -5, auto !important;
 }
 
 body {
