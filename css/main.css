@@ -6,6 +6,12 @@
     font-display: swap;
 }
 
+:root {
+    --primary-color: whitesmoke;
+    --body-font: 'Activist', Arial, Helvetica, sans-serif;
+    --heading-font: 'Activist', Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,15 +19,16 @@
     overscroll-behavior: none;
 }
 
+
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/old_school_point.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
 html a:hover,  
 .slide,
 .arrow {
-    cursor: url('/assets/graphics/old_school_hover.svg') 5 -5, auto !important;
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto !important;
 }
 
 body {
@@ -38,8 +45,8 @@ header {
     z-index: 10; 
     width: 100%;
     padding: 1rem;
-    font-family: 'Activist', Arial, Helvetica, sans-serif;
-    color: #FFFEFC;
+    font-family: var(--body-font);
+    color: var(--primary-color)
 }
 
 main {
@@ -57,14 +64,14 @@ svg.logo {
 }
 
 h1 {
-    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-family: var(--heading-font);
     font-size: clamp(3.5rem,20vw,20rem);
     text-align: center;
     margin: 0;
 }
 
 a {
-    color: #FFFEFC;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -77,9 +84,9 @@ a {
 
 .slider {
     display: flex;
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
     transition: transform 0.5s ease-in-out;
     will-change: transform;
 }
@@ -135,7 +142,7 @@ svg {
     transform: translateY(-50%);
     z-index: 20;
     font-size: 3rem;
-    color: #FFFEFC;
+    color: var(--primary-color);
     cursor: pointer;
 }
 

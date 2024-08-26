@@ -6,6 +6,14 @@
     font-display: swap;
 }
 
+:root {
+	--background-color: black;
+    --primary-color: whitesmoke;
+	--secondary-color: #FF007B;
+    --body-font: 'Activist', Arial, Helvetica, sans-serif;
+    --heading-font: 'Activist', Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,14 +23,14 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/old_school_point.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
 html a:hover,
 div.essential_audio > div:nth-child(1) div.off,
 div.essential_audio > div:nth-child(1) div.play,
 div.essential_audio > div:nth-child(1) div.load {
-    cursor: url('/assets/graphics/old_school_hover.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body {
@@ -46,7 +54,7 @@ header {
     width: 100%;
     padding: 1rem;
     font-family: 'Activist', Arial, Helvetica, sans-serif;
-    color: #FFFEFC;
+    color:var(--primary-color);
 }
 
 svg.logo {
@@ -64,16 +72,16 @@ svg.logo {
 }
 
 h1 {
-    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-family: var(--heading-font);
     font-size: clamp(3rem, 10vw, 12rem);
     line-height: 1;
     text-align: center;
-    color: #FFFEFC;
+    color: var(--primary-color);
     margin: 0 0 3rem;
 }
 
 a {
-    color: #FFFEFC;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -103,7 +111,7 @@ div.essential_audio > div:nth-child(1) div {
 	height: 28px;
 	margin-top: -13px;
 	border-radius: 50%;
-	background-color: #FF007B;
+	background-color: var(--secondary-color);
 }
 
 div.essential_audio > div:nth-child(1) div:after {
@@ -170,7 +178,7 @@ div.essential_audio > div:nth-child(2):after {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
+	background-color: var(--background-color);
 	opacity: 0.3;
 	mix-blend-mode: multiply;
 	content: "";
@@ -178,7 +186,7 @@ div.essential_audio > div:nth-child(2):after {
 
 /* 4. The Loading Progress Bar */
 div.essential_audio > div:nth-child(2) div {
-	background-color: #FFFEFC;
+	background-color: var(--primary-color);
 	mix-blend-mode: multiply;
 }
 

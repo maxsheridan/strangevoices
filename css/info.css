@@ -6,6 +6,14 @@
     font-display: swap;
 }
 
+:root {
+    --background-color: #8F2D56;
+    --primary-color: whitesmoke;
+	--secondary-color: #FF007B;
+    --body-font: 'Activist', Arial, Helvetica, sans-serif;
+    --heading-font: 'Activist', Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,16 +23,17 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/old_school_point.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
 html a:hover {
-    cursor: url('/assets/graphics/old_school_hover.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body {
     min-height: 100vh;
     min-height: 100dvh;
+    background: var(--background-color);
 }
 
 main {
@@ -42,8 +51,8 @@ header {
     z-index: 10; 
     width: 100%;
     padding: 1rem;
-    font-family: 'Activist', Arial, Helvetica, sans-serif;
-    color: #FFFEFC;
+    font-family: var(--body-font);
+    color: var(--primary-color);
 }
 
 svg.logo {
@@ -64,24 +73,24 @@ svg.logo {
 }
 
 h1 {
-    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-family: var(--heading-font);
     font-size: clamp(3rem, 10vw, 12rem);
     line-height: 1;
     text-align: center;
-    color: #FFFEFC;
+    color: var(--primary-color);
     margin: 0 0 3rem;
 }
 
 p {
-    font-family: 'Activist', Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
     font-size: clamp(.85rem,3vw,.95rem);
     line-height: 1.5;
-    color: #FFFEFC;
+    color: var(--primary-color);
     margin: 0;
 }
 
 a {
-    color: #FFFEFC;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -89,7 +98,7 @@ hr {
     height: 2px;
     margin: 1.5rem 0;
     border: none;
-    background: #FFFEFC;
+    background: var(--primary-color);
 }
 
 /*Logo animation*/
