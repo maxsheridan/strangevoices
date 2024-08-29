@@ -122,6 +122,10 @@ a {
     background: rgba(189, 219, 90, 0.25);
 }
 
+#richard .overlay {
+    background: rgba(219, 90, 161, 0.375);
+}
+
 .title {
     display: flex;
     justify-content: center;
