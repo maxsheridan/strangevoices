@@ -137,7 +137,7 @@ a {
 
 svg {
     width: auto;
-    height: clamp(4rem, 10vw, 12rem);
+    height: clamp(2.25rem,12vw,10rem);
 }
 
 .arrow {
@@ -152,13 +152,13 @@ svg {
 
 .arrow-left {
     left: 1rem;
-    width: clamp(2rem,3vw,4rem);
+    width: clamp(1.5rem,3vw,4rem);
     height: auto;
 }
 
 .arrow-right {
     right: 1rem;
-    width: clamp(2rem,3vw,4rem);
+    width: clamp(1.5rem,3vw,4rem);
     height: auto;
 }
 
