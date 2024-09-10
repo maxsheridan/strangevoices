@@ -19,15 +19,12 @@
     overscroll-behavior: none;
 }
 
-
 html {
     font-size: 16px;
     cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
-html a:hover,  
-.slide,
-.arrow {
+html a:hover, .slide, .arrow {
     cursor: url('/assets/graphics/hover.svg') 5 -5, auto !important;
 }
 
@@ -56,23 +53,6 @@ main {
     height: 100vh;
     height: 100dvh;
     overflow: hidden;
-}
-
-svg.logo {
-    width: 9rem;
-    height: auto;
-}
-
-h1 {
-    font-family: var(--heading-font);
-    font-size: clamp(3.5rem,20vw,20rem);
-    text-align: center;
-    margin: 0;
-}
-
-a {
-    color: var(--primary-color);
-    text-decoration: none;
 }
 
 .slider-container {
@@ -133,11 +113,24 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
+    color: var(--primary-color)
 }
 
-svg {
-    width: auto;
-    height: clamp(2.25rem,12vw,10rem);
+h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(3.5rem,15vw,15rem);
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+svg.logo {
+    width: 9rem;
+    height: auto;
 }
 
 .arrow {
@@ -152,14 +145,17 @@ svg {
 
 .arrow-left {
     left: 1rem;
-    width: clamp(1.5rem,3vw,4rem);
-    height: auto;
+    width: auto;
+    height: clamp(1.5rem,3vw,4rem);
+    fill: var(--primary-color);
+
 }
 
 .arrow-right {
     right: 1rem;
-    width: clamp(1.5rem,3vw,4rem);
-    height: auto;
+    width: auto;
+    height: clamp(1.5rem,3vw,4rem);
+    fill: var(--primary-color);
 }
 
 /*Logo animation*/
