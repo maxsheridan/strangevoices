@@ -25,7 +25,7 @@ html {
     cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
-html a:hover,  .slide, .arrow {
+html a:hover, .slide, .arrow {
     cursor: url('/assets/graphics/hover.svg') 5 -5, auto !important;
 }
 
