@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Activist';
+    src: url('/assets/type/Activist.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #FFFEFC;
+    --secondary-color: #FF007B;
+    --body-font: 'Activist', Arial, Helvetica, sans-serif;
+    --heading-font: 'Activist', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
+}
+
+html a:hover,  .slide, .arrow {
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto !important;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10; 
+    width: 100%;
+    padding: 1rem;
+    font-family: var(--body-font);
+    color: var(--primary-color)
+}
+
+p {
+    font-family: var(--body-font);
+    font-size: clamp(.85rem,3vw,.95rem);
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(3rem, 10vw, 12rem);
+    line-height: 1;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 0 0 3rem;
+}
+
+hr {
+    height: 2px;
+    margin: 1.5rem 0;
+    border: none;
+    background: var(--primary-color);
+}
+
+svg.logo {
+    width: 9rem;
+    height: auto;
+}
+
+/*Logo animation*/
+
+.logo:hover .signal1 {
+    animation: blink 1.5s infinite;
+    animation-delay: 0s;
+}
+
+.logo:hover .signal2 {
+    animation: blink 1.5s infinite;
+    animation-delay: .5s;
+}
+
+.logo:hover .signal3 {
+    animation: blink 1.5s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo:hover .radar-signal {
+    opacity: 0;
+}
