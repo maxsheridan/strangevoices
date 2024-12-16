@@ -1,1 +1,0 @@
-function loadHeader(){const e=document.getElementById("header-container"),t=localStorage.getItem("headerContent");t?e.innerHTML=t:fetch("header.html").then((e=>e.text())).then((t=>{e.innerHTML=t,localStorage.setItem("headerContent",t)})).catch((e=>console.error("Error loading header:",e)))}document.addEventListener("DOMContentLoaded",loadHeader);
