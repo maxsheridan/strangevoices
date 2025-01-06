@@ -40,28 +40,28 @@
         <main id="home-sweet-home">
             <div class="acme-all-purpose-wrapper">
                 <div class="slide-o-matic">
-                    <div id="rudy" class="some-slide" data-url="/rudy" data-bg="/assets/images/rudy.webp"  style="background: #8CAEDA no-repeat 40% center/cover;">
+                    <div id="rudy" class="some-slide" data-url="/rudy" style="background: #8CAEDA url('/assets/images/rudy.webp') no-repeat 40% center/cover">
                         <div class="acme-overlay">
                             <div class="name-goes-here">
                                 <h1>Rudy</h1>
                             </div>
                         </div>
                     </div>
-                    <div id="mitch" class="some-slide" data-url="/mitch" data-bg="/assets/images/mitch.webp" style="background: #FE938C no-repeat 50% center/cover;">
+                    <div id="mitch" class="some-slide" data-url="/mitch" style="background: #FE938C url('/assets/images/mitch.webp') no-repeat 50% center/cover">
                         <div class="acme-overlay">
                             <div class="name-goes-here">
                                 <h1>Mitch</h1>
                             </div>
                         </div>
                     </div>
-                    <div id="nic" class="some-slide" data-url="/nic" data-bg="/assets/images/nic.webp" style="background: #BDDB5A no-repeat 72.5% center/cover;">
+                    <div id="nic" class="some-slide" data-url="/nic" style="background: #BDDB5A url('/assets/images/nic.webp') no-repeat 72.5% center/cover">
                         <div class="acme-overlay">
                             <div class="name-goes-here">
                                 <h1>Nic</h1>
                             </div>
                         </div>
                     </div>
-                    <div id="rich" class="some-slide" data-url="/rich" data-bg="/assets/images/rich.webp" style="background: #DB5A87 no-repeat 35% center/cover;">
+                    <div id="rich" class="some-slide" data-url="/rich" style="background: #DB5A87 url('/assets/images/rich.webp') no-repeat 35% center/cover">
                         <div class="acme-overlay">
                             <div class="name-goes-here">
                                 <h1>Rich</h1>
@@ -84,7 +84,6 @@
                 "url": "https://strangevoices.maxsheridan.com"
             }
         </script>
-        <script>document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll(".some-slide"),t=new IntersectionObserver(((e,t)=>{e.forEach((e=>{if(e.isIntersecting){const r=e.target,o=r.getAttribute("data-bg");o&&(r.style.backgroundImage=`url(${o})`,r.removeAttribute("data-bg")),t.unobserve(r)}}))}),{rootMargin:"0px 0px 50px 0px",threshold:.1});e.forEach((e=>{t.observe(e)}))}));</script>
         <script>document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".slide-o-matic"),t=document.querySelectorAll(".some-slide"),n=t.length;let r,o=0;const d=()=>{o=(o+1)%n,a()},c=()=>{o=(o-1+n)%n,a()},a=()=>{requestAnimationFrame((()=>{e.style.transform=`translate3d(-${100*o}%, 0, 0)`}))},i=()=>{r=setInterval(d,4e3)},s=()=>{clearInterval(r)};document.querySelector(".lft-arrow").addEventListener("click",(()=>{s(),c(),i()})),document.querySelector(".rgt-arrow").addEventListener("click",(()=>{s(),d(),i()})),t.forEach((e=>{e.addEventListener("click",(()=>{const t=e.getAttribute("data-url");t&&(window.location.href=t)}))}));let l=0,u=0;e.addEventListener("touchstart",(e=>{l=e.touches[0].clientX})),e.addEventListener("touchmove",(e=>{u=e.touches[0].clientX})),e.addEventListener("touchend",(()=>{l-u>50?(s(),d(),i()):u-l>50&&(s(),c(),i())})),window.addEventListener("load",(()=>{setTimeout((()=>{e.style.transition="transform 0.5s ease-in-out",i()}),100)}))}));</script>
         <div style="display: flex; justify-content: center; position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); width: 100%; padding: 0 1rem">
             <noscript>
