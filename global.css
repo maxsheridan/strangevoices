@@ -28,7 +28,6 @@
     outline: 6px solid var(--focus-color);
     outline-offset: 4px;
 }
-
 :focus-visible.full {
     outline-offset: -6px;
 }           
@@ -100,20 +99,17 @@ nav {
 .nav-right {
     justify-self: end;
 }
-nav.sr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-}
 #zombie-rat {
     width: auto;
     height: clamp(56px, 10vw, 88px);
 }
 main {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    height:100dvh;
+    overflow:hidden;
     margin: unset;
 }
 .acme-content-wrapper {
