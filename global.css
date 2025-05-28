@@ -22,7 +22,7 @@
     --primary-color: #FFFEFC;
     --accent-color: #FF0095;
     --focus-color: #FFEA00;
-    --background-color: #8F386B;
+    --background-color: #FFFEFC;
 }
 :focus-visible {
     outline: 6px solid var(--focus-color);
