@@ -16,7 +16,7 @@
     --gap: clamp(1rem,3vw,1.25rem);
     --medium-gap: clamp(1.25rem,3vw,1.5rem);
     --big-gap: clamp(2rem,3vw,3rem);
-    --max-width: 39rem;
+    --max-width: 37rem;
     --body-font: 'Activist',sans-serif,system-ui;
     --heading-font: 'Carpenter',sans-serif,system-ui;
     --primary-color: #FFFEFC;
@@ -38,7 +38,7 @@
     box-sizing: border-box;
     overscroll-behavior: none;
 }
-* + * {
+main * + * {
     margin-block-start: var(--gap);
 }
 .margins-off > * {
@@ -56,23 +56,27 @@ html {
 body {
     min-height: 100dvh;
     overflow: hidden;
-    margin: unset;
     font-family: var(--body-font);
-    font-size: clamp(.85rem, 3vw, .95rem);
+    font-size: clamp(.85rem,3vw,.95rem);
     line-height: 1.5;
     color: var(--primary-color);
     background: var(--background-color);
+}
+.acme-all-purpose-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 100dvh;
+    padding: 2rem 1rem;
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 100%;
     z-index: 10;
-    padding: clamp(1rem, 3vw, 1.5rem);
-    font-family: var(--body-font);
-    color: var(--primary-color);
+    width: 100%;
 }
 .site-title, 
 .site-title a {
@@ -82,12 +86,14 @@ header {
 nav {
     width: 100%;
 }
+nav {
+    font-family: var(--heading-font);
+    font-size: clamp(1.5rem,3vw,2.5rem);
+}
 .nav-grid {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    font-family: var(--heading-font);
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
     list-style: none;
 }
 .nav-left {
@@ -103,21 +109,12 @@ nav {
     width: auto;
     height: clamp(56px, 10vw, 88px);
 }
+
 main {
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    position:relative;
-    height:100dvh;
-    overflow:hidden;
-    margin: unset;
-}
-.acme-content-wrapper {
     display: flex;
-    flex-direction: column;
+    flex: 1;
     justify-content: center;
-    min-height: 100dvh;
-    padding: 10rem 1rem;
+    align-items: center;
 }
 ul {
     list-style: none;
@@ -126,10 +123,11 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
+
 h1 {
     margin-block-end: var(--big-gap);
     font-family: var(--heading-font);
-    font-size: clamp(3rem,10vw,12rem);
+    font-size: clamp(3rem,8vw,10rem);
     line-height: 1;
     text-align: center;
 }
@@ -143,6 +141,12 @@ hr {
     border: none;
     background: var(--primary-color);
 }
+.arrow {
+    width: auto;
+    height:.75em;
+}
+
+
 .vh {
     position:absolute;
     overflow:hidden;

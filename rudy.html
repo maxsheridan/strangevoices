@@ -7,8 +7,8 @@
         <meta name="color-scheme" content="light only">
         <link rel="preload" href="/assets/images/rudy.webp" as="image">
         <link rel="preload" href="/assets/type/Carpenter.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="stylesheet" href="/global.css?v=2" type="text/css">
-        <link rel="stylesheet" href="/page.css" type="text/css">
+        <link rel="stylesheet" href="/global.css?v=3" type="text/css">
+        <link rel="stylesheet" href="/page.css?v=2" type="text/css">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
@@ -27,12 +27,13 @@
         <meta property="og:image:height" content="720">
     </head>
     <body style="background: #8CAEDA url('/assets/images/rudy.webp') no-repeat 40% center/cover;">
-        <header class="margins-off">
-            <h2 id="nav-label" class="vh">Main Menu</h2>
+        <div class="acme-all-purpose-wrapper" style="background: rgba(140, 174, 218, 0.25)">
+            <header>
+            <h2 id="nav-label" class="vh">Slider Menu</h2>
             <nav aria-labelledby="nav-label">
-                <ul class="nav-grid margins-off">
+                <ul class="nav-grid">
                     <li class="nav-left">
-                        <a href="/" aria-label="Back to homepage">BACK</a>
+                        <a href="/rich" aria-label="Previous voice">PREV</a>
                     </li>
                     <li class="nav-center site-title">
                         <a href="/" aria-label="Strange Voices logo, click for homepage">
@@ -40,19 +41,19 @@
                         </a>
                     </li>
                     <li class="nav-right">
-                        <a href="/info" aria-label="Site information">INFO</a>
+                        <a href="/mitch" aria-label="Next voice">Next</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main style="background: rgba(140, 174, 218, 0.25)">  
-            <div class="acme-content-wrapper">
-                <div class="slide-title">
+        <main>  
+            <div>
+                <div>
                     <h1>
                         Nasty Man
                     </h1>
                 </div>
-                <div class="audio-player">
+                <div class="audio-player" >
                     <audio src="audio/rudy.mp3"></audio>
                     <div class="controls margins-off">
                         <button class="play-pause play" aria-label="Play audio">
@@ -68,6 +69,7 @@
                 </div>
             </div>
         </main>
+        </div>
         <script src="/audio.js" defer></script>
         <script type="application/ld+json">
             {
