@@ -141,12 +141,9 @@ hr {
     border: none;
     background: var(--primary-color);
 }
-.arrow {
-    width: auto;
-    height:.75em;
+.center {
+    text-align: center;
 }
-
-
 .vh {
     position:absolute;
     overflow:hidden;
