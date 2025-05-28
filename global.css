@@ -128,13 +128,13 @@ a {
 h1 {
     margin-block-end: var(--big-gap);
     font-family: var(--heading-font);
-    font-size: clamp(5rem,8vw,10rem);
+    font-size: clamp(3rem,8vw,10rem);
     line-height: 1;
     text-align: center;
 }
 .title {
     width: auto;
-    height: clamp(3rem,10vw,10rem);
+    height: clamp(3rem,8vw,10rem);
 }
 hr {
     height: 2px;
