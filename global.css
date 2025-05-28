@@ -112,6 +112,7 @@ nav {
 
 main {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -123,11 +124,10 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
-
 h1 {
     margin-block-end: var(--big-gap);
     font-family: var(--heading-font);
-    font-size: clamp(3rem,8vw,10rem);
+    font-size: clamp(5rem,8vw,10rem);
     line-height: 1;
     text-align: center;
 }
