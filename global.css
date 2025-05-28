@@ -16,9 +16,9 @@
     --gap: clamp(1rem,3vw,1.25rem);
     --medium-gap: clamp(1.25rem,3vw,1.5rem);
     --big-gap: clamp(2rem,3vw,3rem);
-    --max-width: 37rem;
-    --body-font: 'Activist',sans-serif,system-ui;
-    --heading-font: 'Carpenter',sans-serif,system-ui;
+    --max-width: 39rem;
+    --body-font: 'Activist',system-ui,sans-serif;
+    --heading-font: 'Carpenter',system-ui,sans-serif;
     --primary-color: #FFFEFC;
     --accent-color: #FF0095;
     --focus-color: #FFEA00;
@@ -57,7 +57,7 @@ body {
     min-height: 100dvh;
     overflow: hidden;
     font-family: var(--body-font);
-    font-size: clamp(.85rem,3vw,.95rem);
+    font-size: clamp(.95rem,3vw,1rem);
     line-height: 1.5;
     color: var(--primary-color);
     background: var(--background-color);
