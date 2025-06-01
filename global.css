@@ -73,7 +73,7 @@ body {
     align-items: center;
     min-height: 100dvh;
     overflow: hidden;
-    padding: 2rem;
+    padding: clamp(1rem,3vw,2rem);
 }
 header {
     display: flex;
@@ -122,10 +122,10 @@ nav {
     cursor: pointer;
 }
 .nav-arrow.left {
-    left: 2rem;
+    left: clamp(1rem,3vw,2rem);;
 }
 .nav-arrow.right {
-    right: 2rem;
+    right: clamp(1rem,3vw,2rem);;
 }
 .nav-arrow svg {
     display: block;
