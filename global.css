@@ -53,6 +53,9 @@ html {
     -webkit-text-size-adjust:none;
     -webkit-tap-highlight-color: transparent;
 }
+html:focus-within {
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100dvh;
     overflow: hidden;
@@ -164,6 +167,20 @@ hr {
 .center {
     text-align: center;
 }
+.skip-link {
+    position: absolute;
+    top: -999px;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);    
+    font-size: var(--small-text);
+    color: var(--primary-color);
+}   
+.skip-link:focus {
+    top: 9px;
+    font-size: var(--small-text);
+    color: var(--primary-color);
+}   
 .vh {
     position:absolute;
     overflow:hidden;
