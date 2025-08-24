@@ -8,8 +8,8 @@
         <link rel="preload" href="/assets/images/rudy.webp" as="image">
         <link rel="preload" href="/assets/type/Carpenter.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="/global.css?v=5" type="text/css">
-        <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml">
+        <link rel="icon" sizes="any" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://strangevoices.maxsheridan.com">
@@ -104,10 +104,11 @@
         </div>
         <script>document.addEventListener("DOMContentLoaded",function(){const slider=document.querySelector(".slide-o-matic");const slides=document.querySelectorAll(".slide");const totalSlides=slides.length;let currentIndex=0;let interval;const nextSlide=()=>{currentIndex=(currentIndex+1)%totalSlides;updateSlidePosition()};const prevSlide=()=>{currentIndex=(currentIndex-1+totalSlides)%totalSlides;updateSlidePosition()};const updateSlidePosition=()=>{requestAnimationFrame(()=>{slider.style.transform=`translate3d(-${100 * currentIndex}%, 0, 0)`})};const startCarousel=()=>{interval=setInterval(nextSlide,4000)};const stopCarousel=()=>{clearInterval(interval)};slides.forEach((slide)=>{slide.addEventListener("focus",stopCarousel);slide.addEventListener("blur",startCarousel)});let touchStartX=0;let touchEndX=0;slider.addEventListener("touchstart",(e)=>{touchStartX=e.touches[0].clientX});slider.addEventListener("touchmove",(e)=>{touchEndX=e.touches[0].clientX});slider.addEventListener("touchend",()=>{const swipeDistance=touchStartX-touchEndX;if(swipeDistance>50){stopCarousel();nextSlide();startCarousel()}else if(swipeDistance<-50){stopCarousel();prevSlide();startCarousel()}});const leftArrow=document.querySelector(".nav-arrow.left");const rightArrow=document.querySelector(".nav-arrow.right");if(leftArrow&&rightArrow){leftArrow.addEventListener("click",()=>{stopCarousel();prevSlide();startCarousel()});rightArrow.addEventListener("click",()=>{stopCarousel();nextSlide();startCarousel()})}window.addEventListener("load",()=>{setTimeout(()=>{slider.style.transition="transform 0.5s ease-in-out";startCarousel()},100)})});</script>
         <div style="display: flex; justify-content: center; position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); width: 100%; padding: 0 1rem">
-        <noscript>
-            <p style="display: inline; color: var(--primary-color); background: var(--accent-color); padding: 0 .15rem">
-                This site needs vanilla JS to work.
-            </p>
-        </noscript>
+            <noscript>
+                <p style="display: inline; color: var(--primary-color); background: var(--accent-color); padding: 0 .15rem">
+                    Enable Javascript to run slider.
+                </p>
+            </noscript>
+        </div>
     </body>
 </html>
