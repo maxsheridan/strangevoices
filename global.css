@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Carpenter';
-    src: url(/assets/type/Carpenter.woff2) format('woff2');
+    src: url(/assets/type/carpenter.woff2) format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Activist';
-    src: url(/assets/type/Activist.woff2) format('woff2');
+    src: url(/assets/type/activist.woff2) format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
