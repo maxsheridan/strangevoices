@@ -209,10 +209,8 @@ hr {
     text-decoration-thickness: 2px;
 }
 
-.bullet::after {
-    margin: 0 0 0 .25rem;
-    font-family: var(--body);
-    content: "•";
+.space {
+    margin-right:.25rem;
 }
 
 .skip-link {
