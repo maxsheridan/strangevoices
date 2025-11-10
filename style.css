@@ -20,7 +20,7 @@
     --big-gap: 3rem;
     --max-width: 39rem;
     --body: 'Activist', system-ui, sans-serif;
-    --heading: 'Carpenter', system-ui, sans-serif;
+    --heading: 'Carpenter', Impact, system-ui, sans-serif;
     --paragraph: calc(.95rem + .3vw);
     --heading-1: calc(2rem + 5vw);
     --heading-1: clamp(3rem, 8vw, 5rem);
@@ -99,7 +99,8 @@ nav {
     margin-block-start: var(--gap);
     font-family: var(--heading);
     font-size: calc(var(--heading-1) * .5);
-    letter-spacing: 1px;;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-grid {
@@ -173,6 +174,7 @@ h1 {
     font-size: var(--heading-1);
     line-height: 1;
     text-align: center;
+    text-transform: uppercase;
 }
 
 a {
