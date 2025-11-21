@@ -17,7 +17,7 @@
 :root {
     --gap: 1.25rem;
     --medium-gap: 1.5rem;
-    --big-gap: 4rem;
+    --big-gap: 3rem;
     --max-width: 39rem;
     --body: 'Activist', system-ui, sans-serif;
     --heading: 'Carpenter', Impact, system-ui, sans-serif;
@@ -40,6 +40,10 @@
 
 main * + * {
     margin-block-start: var(--gap);
+}
+
+h1 ~ p { 
+    margin-block-start:4rem;
 }
 
 .margins-off > * {
@@ -142,7 +146,7 @@ main {
 
 .title {
     width: auto;
-    height: calc(var(--heading-1) * 9);
+    height: calc(var(--heading-1) * .9);
 }
 
 .nav-arrow {
