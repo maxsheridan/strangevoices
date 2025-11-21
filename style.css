@@ -80,6 +80,7 @@ body {
     align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
+    overflow: hidden;
     padding: 1rem 1.5rem;
 }
 
@@ -307,8 +308,8 @@ a:focus-visible.full {
     }
 }
 
-.rotate {
+.warning {
     width: auto;
-    height: calc(12px + .4vw);
+    height: calc(13px + .4vw);
     margin-right: 6px;
 }
