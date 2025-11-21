@@ -42,7 +42,7 @@ main * + * {
     margin-block-start: var(--gap);
 }
 
-h1 + p { 
+h1:not(404) + p { 
     margin-block-start: 3.5rem;
 }
 
