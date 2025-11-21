@@ -37,6 +37,9 @@
         <style>.slide-o-matic{display:flex;position:absolute;top:0;left:0;width:100%;height:100%;transition:transform 0.5s ease-in-out;will-change:transform}.slide{display:flex;justify-content:center;align-items:center;position:relative;z-index:2;min-width:100%;height:100%;cursor:pointer}.acme-overlay{position:absolute;top:0;left:0;width:100%;height:100%}#rudy .acme-overlay{background:rgb(140 174 218/.25)}#mitch .acme-overlay{background:rgb(254 148 140/.25)}#nic .acme-overlay{background:rgb(189 219 90/.25)}#rich .acme-overlay{background:rgb(219 90 161/.375)}.slide-title{display:flex;justify-content:center;align-items:center;height:100%}</style>
     </head>
     <body>
+        <div class="landscape-warning" style="display: none">
+            <svg class="rotate" viewBox="0 0 25 25"><g fill="none" stroke="currentColor" stroke-width="2.75"><path d="M17.67 8.36h6.21v-6.2"/><path d="M23.88 8.36 20.22 4.7a11.43 11.43 0 0 0-16-.09m3.11 12.03H1.12v6.2"/><path d="m1.12 16.64 3.66 3.66a11.43 11.43 0 0 0 16 .09"/></g></svg><p>Please turn your device around.</p>
+        </div>
         <div class="acme-all-purpose-wrapper">
             <a href="#main-content" class="skip-link">Skip to content</a>
             <header>
@@ -69,28 +72,28 @@
                     </p>
                 </div>
                 <div id="slider" class="slide-o-matic margins-off" role="region" aria-roledescription="carousel" aria-label="Four Slides">
-                    <a href="/rudy" id="rudy" class="slide full" aria-label="Slide 1 of 4: Rudy Giuliani" tabindex="0" style="background: #8CAEDA url('/assets/images/rudy.webp') no-repeat 40% center/cover">
+                    <a href="/rudy" id="rudy" class="slide full" aria-label="Slide 1 of 4: Rudy Giuliani" tabindex="0" style="background: #8CAEDA url('/assets/images/rudy.webp') no-repeat fixed 40% center/cover">
                         <div class="acme-overlay">
                             <div class="slide-title">
                                 <svg class="title" viewBox="0 0 59 18.2" fill="currentColor"><path d="M13.94 7.7a1.4 1.4 0 0 1-1.37 1.4q.57 0 .97.42.4.4.4 1v7.7H7.68l-.7-7h-.71v7h-6.3V0h12.6q.57 0 .97.41t.4 1zM6.27 2.8l.7 5.6h.7V2.8zm22.56 14a1.4 1.4 0 0 1-1.4 1.41h-11.2q-.59 0-.98-.4-.4-.42-.4-1.01V0h6.28l.7 14h.71V0h6.29zM42.32 0q.6 0 1 .41t.4 1V16.8a1.4 1.4 0 0 1-1.4 1.41H29.74V0zm-6.3 4.21.66 9.79h.75V4.21zM58.6 0l-1.41 12.63H54.4v5.58h-5.64v-5.58h-2.8L44.62 0h6.29l.7 8.35h.7V0z"/></svg>
                             </div>
                         </div>
                     </a>
-                    <a href="/mitch" id="mitch" class="slide full" aria-label="Slide 2 of 4: Mitch McConnell" tabindex="-1" style="background: #FE938C url('/assets/images/mitch.webp') no-repeat 50% center/cover">
+                    <a href="/mitch" id="mitch" class="slide full" aria-label="Slide 2 of 4: Mitch McConnell" tabindex="-1" style="background: #FE938C url('/assets/images/mitch.webp') no-repeat fixed 50% center/cover">
                         <div class="acme-overlay">
                             <div class="slide-title">
                                 <svg class="title" viewBox="0 0 75 18.2" fill="currentColor"><path d="M22.4 0v18.2h-6.2v-14h-.8l-.6 14h-7L7 4.2h-.7v14H0V0h10.5l.7 14h.7V0zm1 18.2V0h6.3v18.2zM44.5 0v4.2h-3.8v14h-6.3v-14h-3.8V0zm14.9 8.4h-7V4.2H51l.7 9.8h.7V9.2l7 .5v7.1q0 .6-.4 1t-1 .4H46.8q-.5 0-1-.4-.3-.4-.3-1V1.4q0-.6.4-1t1-.4H58q.6 0 1 .4t.4 1zM75 0v18.2h-7v-7h-.7l-.7 7h-6.3V0H67l.2 7h.8l.4-7z"/></svg>
                             </div>
                         </div>
                     </a>
-                    <a href="/nic" id="nic" class="slide full" aria-label="Slide 3 of 4: Nic Cage" tabindex="-1" style="background: #BDDB5A  url('/assets/images/nic.webp') no-repeat 72.5% center/cover">
+                    <a href="/nic" id="nic" class="slide full" aria-label="Slide 3 of 4: Nic Cage" tabindex="-1" style="background: #BDDB5A  url('/assets/images/nic.webp') no-repeat fixed 72.5% center/cover">
                         <div class="acme-overlay">
                             <div class="slide-title">
                                 <svg class="title" viewBox="0 0 37.4 18.2" fill="currentColor"><path d="M15.342 0v18.211H4.848l-.615-14h-.774v14H-.046V0h10.494l.705 14h.706V0zm.911 18.211L16.275 0h6.283v18.211zM37.4 8.4h-6.943V4.234h-1.411l.66 9.766h.751V9.174l6.943.523V16.8q0 .591-.398 1.001a1.3 1.3 0 0 1-.968.41H24.857q-.591 0-.99-.41a1.38 1.38 0 0 1-.398-1.001V1.389q0-.57.409-.979.41-.41.979-.41h11.177q.57 0 .968.41t.398.979z"/></svg>
                             </div>
                         </div>
                     </a>  
-                    <a href="/rich" id="rich" class="slide full" aria-label="Slide 2 of 4: Richard Simmons" tabindex="-1" style="background: #DB5A87 url('/assets/images/rich.webp') no-repeat 35% center/cover">
+                    <a href="/rich" id="rich" class="slide full" aria-label="Slide 2 of 4: Richard Simmons" tabindex="-1" style="background: #DB5A87 url('/assets/images/rich.webp') no-repeat fixed 35% center/cover">
                         <div class="acme-overlay">
                             <div class="slide-title">
                                 <svg class="title" viewBox="0 0 51.5 18.2" fill="currentColor"><path d="M13.925 7.694q0 .593-.398 1.002a1.3 1.3 0 0 1-.965.409q.568 0 .965.41.398.41.398 1.002v7.694H7.677l-.704-6.989h-.704v6.989H-.024V0h12.586q.568 0 .965.41.398.41.398 1.001zM6.269 2.8l.704 5.6h.704V2.8zm8.565 15.411L14.856 0h6.271v18.211zM35.939 8.4H29.01V4.234h-1.408L28.26 14h.75V9.174l6.929.523V16.8q0 .591-.397 1.001-.398.41-.966.41H23.421q-.59 0-.988-.41a1.38 1.38 0 0 1-.397-1.001V1.389q0-.57.408-.979.41-.41.977-.41h11.155q.568 0 .966.41.397.41.397.979zM51.524 0v18.211h-6.997v-6.989H43.8l-.682 6.989h-6.27V0h6.679l.25 6.988h.727L44.913 0z"/></svg>

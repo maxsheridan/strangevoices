@@ -17,13 +17,13 @@
 :root {
     --gap: 1.25rem;
     --medium-gap: 1.5rem;
-    --big-gap: 3rem;
+    --big-gap: 4rem;
     --max-width: 39rem;
     --body: 'Activist', system-ui, sans-serif;
     --heading: 'Carpenter', Impact, system-ui, sans-serif;
-    --paragraph: calc(.95rem + .3vw);
+    --paragraph: calc(1rem + .3vw);
     --heading-1: calc(2rem + 5vw);
-    --heading-1: clamp(3rem, 8vw, 5rem);
+    --heading-1: clamp(3rem, 2.5rem + 3vw, 6rem);
     --primary: #FFFEFC;
     --accent: #FF0095;
     --focus: #FFEA00;
@@ -38,11 +38,11 @@
     overscroll-behavior: none;
 }
 
-main *+* {
+main * + * {
     margin-block-start: var(--gap);
 }
 
-.margins-off>* {
+.margins-off > * {
     margin-block-start: 0;
 }
 
@@ -76,7 +76,6 @@ body {
     align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
-    overflow: hidden;
     padding: 1rem 1.5rem;
 }
 
@@ -143,7 +142,7 @@ main {
 
 .title {
     width: auto;
-    height: var(--heading-1);
+    height: calc(var(--heading-1) * 9);
 }
 
 .nav-arrow {
@@ -284,4 +283,28 @@ a:focus-visible.full {
             opacity: 0
         }
     }
+}
+
+@media (max-height: 400px) {
+    .landscape-warning {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 999;
+        width: 102%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--background);
+        background: #8F386B;
+    }
+}
+
+.rotate {
+    width: auto;
+    height: calc(12px + .4vw);
+    margin-right: 6px;
 }
