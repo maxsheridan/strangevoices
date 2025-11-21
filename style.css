@@ -43,7 +43,7 @@ main * + * {
 }
 
 h1 + p { 
-    margin-block-start:4rem;
+    margin-block-start: 3.5rem;
 }
 
 .margins-off > * {
