@@ -37,7 +37,7 @@
     --body: 'Monaspace Xenon Regular', monospace;
     --heading: 'Monaspace Xenon Semibold', monospace;
     --italic: 'Monaspace Radon', monospace;
-    --paragraph: calc(.9rem + .25vw);
+    --paragraph: calc(1.06rem + .3vw);
     --heading-2: calc(var(--paragraph) * 1.2);
     --primary: #423B77;
     --accent: #423B77;
@@ -290,14 +290,14 @@ h2 {
     font-family: var(--heading);
     font-size: var(--heading-2);
     font-weight: 600;
-    font-variation-settings: "wght" 550;
+    font-variation-settings: "wght" 600;
     line-height: 1;
 }
 
 .em {
     font-family: var(--heading);
     font-weight: 600;
-    font-variation-settings: "wght" 550;
+    font-variation-settings: "wght" 600;
 }
 
 .italic {
