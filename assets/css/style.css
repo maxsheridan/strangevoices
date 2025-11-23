@@ -37,7 +37,7 @@
     --body: 'Monaspace Xenon Regular', monospace;
     --heading: 'Monaspace Xenon Semibold', monospace;
     --italic: 'Monaspace Radon', monospace;
-    --paragraph: calc(1.06rem + .3vw);
+    --paragraph: calc(1.06rem + .25vw);
     --heading-2: calc(var(--paragraph) * 1.2);
     --primary: #423B77;
     --accent: #423B77;
