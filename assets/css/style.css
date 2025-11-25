@@ -336,6 +336,10 @@ footer > div {
     column-gap: var(--column-gap);
 }
 
+footer a {
+    text-decoration: none;
+}
+
 #weird-bubba {
     width: auto;
     height: 28px;
