@@ -162,7 +162,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 70%;
+    flex: 75%;
     padding: calc(var(--space-0) + 2vw);
 }
 
@@ -356,7 +356,7 @@ hr {
     justify-content: center;
     align-items: center;
     width: calc(max(0px, 100vw - 768px) * 999);
-    max-width: 30%;
+    max-width: 25%;
     overflow: hidden;
     border-left: calc(max(0px, 100vw - 768px) * 999) dotted var(--primary);
     border-left-width: calc(min(2px, max(0px, (100vw - 768px)) * 999));
