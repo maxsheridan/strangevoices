@@ -42,7 +42,7 @@
     --body: 'Monaspace Xenon Regular', monospace;
     --heading: 'Monaspace Xenon Semibold', monospace;
     --italic: 'Monaspace Radon', monospace;
-    --paragraph: calc(1rem + .3vw);
+    --paragraph: calc(1rem + .25vw);
     --heading-2: calc(var(--paragraph) * 1.2);
     --primary: #423B77;
     --accent: #423B77;
@@ -146,7 +146,7 @@ header {
     flex-direction: column;
     row-gap: 1rem;
     width: 100%;
-    padding: calc(var(--space-0) + .5vw);
+    padding: calc(var(--space-1) + 1vw);
     border-bottom: 2px dotted var(--accent);
     border-radius:  1rem 1rem 0 0;
     background-color: var(--dark-background);
@@ -163,7 +163,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex: 75%;
-    padding: calc(var(--space-0) + .5vw);
+    padding: calc(var(--space-0) + 1vw);
 }
 
 .row {
