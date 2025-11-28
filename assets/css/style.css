@@ -370,14 +370,21 @@ hr {
     column-gap: var(--space--2);
 }
 
-.footer > div {
+.footer div:first-of-type {
     display: flex;
     align-items: center;
-    column-gap: var(--space--3);
+    column-gap: var(--space--2);
 }
 
 .footer a {
     text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .footer hr, 
+    .copyright {
+        display: none;
+    }
 }
 
 #weird-bubba {
@@ -414,12 +421,6 @@ input:focus-visible {
     height: 1px;
     clip-path: inset(50%);
     white-space: nowrap;
-}
-
-@media (max-width: 640px) {
-    .footer hr {
-        display: none;
-    }
 }
 
 body.utility {
