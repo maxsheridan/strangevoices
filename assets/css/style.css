@@ -146,7 +146,7 @@ header {
     flex-direction: column;
     row-gap: 1rem;
     width: 100%;
-    padding: calc(var(--space-0) + 1vw);
+    padding: calc(var(--space-0) + 2vw);
     border-bottom: 2px dotted var(--accent);
     border-radius:  1rem 1rem 0 0;
     background-color: var(--dark-background);
@@ -163,7 +163,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex: 75%;
-    padding: calc(var(--space-0) + 1vw);
+    padding: calc(var(--space-0) + 2vw);
 }
 
 .row {
