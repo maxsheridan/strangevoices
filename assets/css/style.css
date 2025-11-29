@@ -144,9 +144,8 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
     width: 100%;
-    padding: calc(var(--space-0) + 1vw);
+    padding: var(--space-2) calc(var(--space-0) + 1vw);
     border-bottom: 2px dotted var(--accent);
     border-radius:  1rem 1rem 0 0;
     background-color: var(--dark-background);
@@ -176,6 +175,10 @@ main {
 
 .title {
     column-gap: var(--space--2);
+}
+
+main .title:first-of-type {
+    margin-block-start: var(--space-2);
 }
 
 p {
@@ -385,11 +388,6 @@ hr {
     .copyright {
         display: none;
     }
-}
-
-#weird-bubba {
-    width: 1.25em;
-    height: auto;
 }
 
 a:focus-visible,
