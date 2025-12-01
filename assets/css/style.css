@@ -58,6 +58,16 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #3B356B;
+        --accent: #3B356B;
+        --focus: #3B356B;
+        --background: #CFD5CF;
+        --dark-background: rgba(66, 59, 120, 0.085);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
