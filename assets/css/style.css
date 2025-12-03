@@ -60,10 +60,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: #3B356B;
-        --accent: #3B356B;
-        --focus: #3B356B;
-        --background: #CFD5CF;
+        --background: #D7E0D2;
         --dark-background: rgba(66, 59, 120, 0.085);
     }
 }
