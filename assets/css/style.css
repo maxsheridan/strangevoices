@@ -92,6 +92,10 @@ html:focus-within {
     margin-block-start: var(--space--1);
 }
 
+.space-0 > * + * {
+    margin-block-start: var(--space-0);
+}
+
 .space-1 > * + * {
     margin-block-start: var(--space-1);
 }
@@ -169,6 +173,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex: 75%;
+    margin-bottom: calc(var(--space-2) - calc(var(--space-0) + 1vw));
     padding: calc(var(--space-0) + 1vw);
 }
 
@@ -217,6 +222,10 @@ h2 {
 
 .italic {
     font-family: var(--italic);
+}
+
+.stacked > div {
+    flex: 1 1 100%;
 }
 
 .no-border {
