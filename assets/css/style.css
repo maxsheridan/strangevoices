@@ -100,8 +100,7 @@ html:focus-within {
 }
 
 header > * + *,
-.tracks > * + *,
-.notes > * + *,
+.info > * + *,
 .notes > div > * + *:not(hr) {
     margin-block-start: var(--space-2);
 }
