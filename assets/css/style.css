@@ -101,7 +101,7 @@ html:focus-within {
 
 header > * + *,
 .info > * + *,
-.notes > div > * + *:not(hr) {
+.notes > div > *:not(hr) + *:not(hr) {
     margin-block-start: var(--space-2);
 }
 
